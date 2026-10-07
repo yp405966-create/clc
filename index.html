@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud File Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            ☁️ CloudStorage
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#files">My Files</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main id="home">
+
+        <!-- Welcome -->
+        <section class="welcome">
+            <h1>Cloud File Storage</h1>
+
+            <p>
+                Upload, store and manage your files securely
+                using cloud computing technology.
+            </p>
+        </section>
+
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    ☁️
+                </div>
+
+                <h2>Upload Your Files</h2>
+
+                <p>
+                    Select a file from your computer
+                </p>
+
+                <label for="fileInput" class="choose-btn">
+                    Choose File
+                </label>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                >
+
+                <p id="selectedFile">
+                    No file selected
+                </p>
+
+                <button
+                    id="uploadBtn"
+                    class="upload-btn"
+                >
+                    Upload File
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Storage Section -->
+        <section class="storage-card">
+
+            <div class="storage-header">
+
+                <h2>Storage</h2>
+
+                <span id="storageText">
+                    0 MB / 100 MB
+                </span>
+
+            </div>
+
+            <div class="progress-container">
+
+                <div
+                    id="progressBar"
+                    class="progress-bar">
+                </div>
+
+            </div>
+
+            <p>
+                Your cloud storage usage
+            </p>
+
+        </section>
+
+
+        <!-- Files Section -->
+        <section id="files" class="files-section">
+
+            <div class="files-header">
+
+                <h2>My Files</h2>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔍 Search files..."
+                >
+
+            </div>
+
+
+            <!-- File Table -->
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>File Name</th>
+                            <th>Type</th>
+                            <th>Size</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="fileTable">
+
+                        <!-- Files will appear here -->
+
+                    </tbody>
+
+                </table>
+
+
+                <div
+                    id="emptyMessage"
+                    class="empty-message">
+
+                    📂 No files uploaded yet.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="about">
+
+            <h2>About This Project</h2>
+
+            <p>
+                This web application demonstrates a basic
+                cloud computing file management system.
+                Users can select, upload, search, download
+                and delete files.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Cloud File Storage |
+            Cloud Computing Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
